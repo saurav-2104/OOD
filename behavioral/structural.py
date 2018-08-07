@@ -79,6 +79,6 @@ if __name__ == '__main__':
     auto = AutoStrategy()
     cab = CabStrategy()
     person = Person('Saurav', bus)
-    # person.travel_to_airport()
+    person.travel_to_airport()
     person_fresher = Person('Fresher', auto)
     person_fresher.travel_to_airport()
