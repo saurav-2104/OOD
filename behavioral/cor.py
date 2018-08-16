@@ -17,9 +17,9 @@ VP: Handles critical severity bugs
 
 
 class Severity(Enum):
-    low = 1
-    high = 2
-    critical = 3
+    LOW = 1
+    HIGH = 2
+    CRITICAL = 3
 
 
 class Handler(metaclass=abc.ABCMeta):
@@ -34,7 +34,7 @@ class Handler(metaclass=abc.ABCMeta):
 class DeveloperHandler(Handler):
 
     def handle(self, severity):
-        if severity == Severity.low:
+        if severity == Severity.LOW:
             print("Developer handled the issue. Please do not escalate.")
         elif self.successor:
             self.successor.handle(severity)
@@ -43,7 +43,7 @@ class DeveloperHandler(Handler):
 class ManagerHandler(Handler):
 
     def handle(self, severity):
-        if severity == Severity.high:
+        if severity == Severity.HIGH:
             print("Manager handled the issue. Please do not escalate.")
         elif self.successor:
             self.successor.handle(severity)
@@ -52,16 +52,16 @@ class ManagerHandler(Handler):
 class VicePresidentHandler(Handler):
 
     def handle(self, severity):
-        if severity == Severity.critical:
+        if severity == Severity.CRITICAL:
             print("VP handled the issue.")
         else:
             print("We are sorry !")
 
 
 if __name__ == '__main__':
-    low = Severity.low
-    high = Severity.high
-    critical = Severity.critical
+    low = Severity.LOW
+    high = Severity.HIGH
+    critical = Severity.CRITICAL
     invalid = "Invalid"
     vp = VicePresidentHandler()
     manager = ManagerHandler(vp)
