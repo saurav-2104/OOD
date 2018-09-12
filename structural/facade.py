@@ -3,8 +3,11 @@ Provide a unified interface to a set of interfaces in a subsystem.
 Facade defines a higher-level interface that makes the subsystem easier to use.
 """
 
+"""
+Use case:
+As a lazy, shopaholic person, I need a one button-click checkout to place my order.
+"""
 
-# Use case: As a lazy, shopaholic person, I need a one button-click checkout to place my order.
 
 class BuyNow:
     """

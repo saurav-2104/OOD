@@ -9,7 +9,8 @@ import abc
 from enum import Enum
 
 """
-Use case: A bug when raised has to be handled depending on the severity.
+Use case: 
+A bug when raised has to be handled depending on the severity.
 Developer: Handles low severity bugs
 Director: Handles medium severity bugs
 VP: Handles critical severity bugs

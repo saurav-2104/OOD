@@ -7,7 +7,8 @@ Helps in solving "Open-Closed Principle" in SOLID
 import abc
 
 """
-Use case: As a Bangalorean, I would like to determine my strategy on travelling to 
+Use case: 
+As a Bangalorean, I would like to determine my strategy on travelling to 
 the airport.
 """
 

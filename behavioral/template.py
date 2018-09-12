@@ -9,7 +9,8 @@ Based on Inversion of Control aka Hollywood's Principle
 import abc
 
 """
-Use case: KFC plans to open some restaurants in India. Most of the people in India are vegetarian.
+Use case: 
+KFC plans to open some restaurants in India. Most of the people in India are vegetarian.
 """
 
 
